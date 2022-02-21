@@ -1,1 +1,1 @@
-# one-hot-encoder-spark
+# one-hot-encoder-for-spark
