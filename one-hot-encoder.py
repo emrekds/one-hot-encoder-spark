@@ -5,12 +5,15 @@ class OneHotEncoder:
 
     def fit_transform(self, dataframe, drop_last=True, drop_categoric=True):
         '''
+        Find categoric columns from given dataframe.
         Return one hot encoded pyspark dataframe.
         
         Parameters
             dataframe : pyspark dataframe
             drop_last : bool
-                Drops last elemnt
+                Drops last element of categorical column.
+            drop_categorical : bool
+                Drops categorical columns after encoding.
                 
         '''
         df = dataframe
